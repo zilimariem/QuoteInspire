@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+
+.tit{
+    font-family: "Londrina Sketch", serif;
+    font-size: 80px;
+    font-weight: 1000;
+    padding-top: 72px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.subtitle {
+    font-family: "Georgia", serif;
+    font-size: 28px;
+    color: #444;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+.transparent-image {
+    width: 30%;
+    opacity: 0.5; /* Adjust the opacity level to make the image transparent */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+.transparent-image:hover {
+    opacity: 1; /* When hovering over the image, it becomes fully opaque */
+}
+

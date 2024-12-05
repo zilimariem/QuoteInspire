@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+
+.tit{
+    font-family: "Londrina Sketch", serif;
+    font-size: 70px;
+    font-weight: 900;
+    
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%; /* Adjust width to be responsive */
+    height: 310px;    
+    perspective: 1000px; /* 3D effect */
+    border-radius: 5%; /* Outer card border radius */
+    overflow: hidden; /* Ensure inner elements don't overflow */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip on hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Prevent back side from showing */
+    border-radius: 5%; /* Apply border radius to front and back */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #C38154;
+    transform: rotateY(180deg);
+}
+
+.cler {
+    color: white;
+}
+
+/* Image styling */
+.imgg {
+    width: 100%;
+    height: 100%; /* Match height of the card */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5%; /* Apply border radius to image */
+}
+
+.name {
+    font-size: 42px;
+    font-family: "Qwitcher Grypen";
+    font-weight: 900;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.quote {
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #3C2A21; 
+    margin-top: 10px; /* Add margin to separate from the name */
+    white-space: normal; /* Allow wrapping */
+    overflow-wrap: break-word; /* Break long words if necessary */
+}
+
+
+.bou{
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 27px;
+    padding-right: 27px;
+    
+}
+.boutt{
+    color: rgb(203, 180, 180);
+    background-color: #279c10;
+}
+.bout{
+    color: rgb(203, 180, 180);
+    background-color: #e7482c;
+}

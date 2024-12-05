@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+
+.tit{
+    font-family: "Londrina Sketch", serif;
+    font-size: 70px;
+    font-weight: 900;
+    
+
+}
+.bout {
+    background-color: #3C2A21; /* Original background color */
+    color: #e4d2c9; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s; /* Transition for smooth effect */
+    width: 100% !important; 
+}
+.bout:hover {
+    background-color: transparent; /* Change background to transparent on hover */
+    color: #3C2A21; /* Change text color to match the background */
+    border-color: #3C2A21;
+    border-width: 2px;
+}
+
+.inp{
+    border-color: #3C2A21;
+    background-color: #e4d2c9;
+    
+}
+.inp::placeholder{
+    color: #3C2A21;
+}

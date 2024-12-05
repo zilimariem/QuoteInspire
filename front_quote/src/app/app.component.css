@@ -1,0 +1,41 @@
+/* Add this to your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+
+.navbar {
+    background-color: transparent !important; /* Make the navbar background transparent */
+    position: relative; /* Ensure it sits above other content */
+    z-index: 10; /* Adjust stacking context */
+}
+
+.navbar-nav .nav-link {
+    color: #3C2A21; /* Change link color to white or any color you prefer */
+    font-family: "Georgia", serif;
+    font-size: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    font-weight: 500;
+    transition: font-size 0.2s ease; /* Smooth transition */
+}
+
+
+/* Optional: Change the color of the links on hover */
+.navbar-nav .nav-link:hover {
+    
+    font-size: 18px; /* Increase the font size on hover */
+    /* You can adjust the value above to your preference */
+}
+
+
+
+
+.logo{
+    font-family: "Londrina Sketch", serif;
+    font-size: 32px;
+    font-weight: 700;
+  
+
+}
+
+

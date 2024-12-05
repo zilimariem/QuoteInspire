@@ -1,0 +1,11 @@
+/* body{
+    background-color: #c98746;
+} */
+body {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240105/pngtree-crumpled-parchment-paper-texture-background-in-vector-illustration-image_13924165.png");
+    background-size: cover; /* This makes the background image cover the entire body */
+    background-position: center; /* This centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+
+}

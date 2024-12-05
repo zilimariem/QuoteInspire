@@ -1,0 +1,40 @@
+
+<div class="container">
+    <h1 class="text-center mt-5 mb-5  tit">Inspire Quotes</h1>
+    
+       
+ 
+
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-5" *ngFor="let item of quotes">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img [src]="item.image" class="imgg" alt="Avatar">
+                        <!-- <img [src]="'http://127.0.0.1:3000/getimage/' + item.image" class="imgg" alt="Avatar"> -->
+                        
+                    
+                        
+                        
+                    </div>
+                    <div class="flip-card-back card-body">
+                        <h5 class="name" [ngStyle]="{'color': item.color}">{{item.name}}</h5>
+                        <p class="quote">{{item.quote}}</p>
+
+                        <div class="container">
+                            <button class="btn bou bout " (click)="supp(item._id)">Delete</button>
+                            <button class="btn bou boutt "  [routerLink]="['/update' , item._id]"  >update</button>
+                
+                        </div>
+                        
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
