@@ -1,8 +1,20 @@
 
 <div class="container">
-    <h1 class="text-center mt-5 mb-5  tit">Inspire Quotes</h1>
+   
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- Left Logo -->
+          <img src="photos/logo1.png" alt="Left Logo" class="img-fluid" style="height: 80px; width: auto; margin-right: 20px;">
+          
+          <!-- Title -->
+          <h1 class="text-center mt-2 mb-5  tit" style="margin: 0;">Inspire Quotes</h1>
+          
+          <!-- Right Logo -->
+          <img src="photos/logo1.png" alt="Right Logo" class="img-fluid" style="height: 80px; width: auto; margin-left: 20px;">
+        </div>
+      </div>
     
-       
+    
  
 
     <div class="row">
@@ -22,8 +34,11 @@
                         <p class="quote">{{item.quote}}</p>
 
                         <div class="container">
-                            <button class="btn bou bout " (click)="supp(item._id)">Delete</button>
-                            <button class="btn bou boutt "  [routerLink]="['/update' , item._id]"  >update</button>
+                            <button class="button-55 bou bout" role="button" (click)="supp(item._id)">Delete</button>
+                            <!-- <button class="btn bou bout " (click)="supp(item._id)">Delete</button> -->
+                            <!-- <button class="btn bou boutt "  [routerLink]="['/update' , item._id]"  >update</button> -->
+
+                            <button class="button-555 bou bout" role="button" [routerLink]="['/update' , item._id]" >update</button>
                 
                         </div>
                         

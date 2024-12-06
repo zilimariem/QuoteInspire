@@ -22,7 +22,7 @@
 
 
 .transparent-image {
-    width: 30%;
+    width: 32%;
     opacity: 0.5; /* Adjust the opacity level to make the image transparent */
     transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
 }
